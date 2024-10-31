@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- block - tag the whole width
+    inline - take space that is give to to them -->
+    <form action="" method="post">
+        <div>
+            <label for="namefield">Name:</label>
+            <input type="text" pattern="[A-Za-z._&%]{3,3}+[]" id="namefield" placeholder="Enter Your Name" />            
+        </div>
+        <div>
+            <input type="checkbox" id="FrontEnd" />
+            <label for="FrontEnd">FrontEnd development</label>
+            <input type="checkbox" id="BackEnd" />
+            <label for="BackEnd">Backend development</label>
+            <input type="checkbox" id="FullStack" />
+            <label for="FullStack">Fullstack development</label>
+        </div>
+        <div>
+            <input type="radio" name="Course" id="FrontendCourse">
+            <label for="FrontendCourse">FrontEnd development</label>
+            <input type="radio" name="Course" id="Backendcourse">
+            <label for="Backendcourse">BackEnd development</label>
+            <input type="radio" name="Course" id="FullStackcourse">
+            <label for="FullStackcourse">FullStack development</label>
+        </div>
+        <div>
+            <input type="email" name="" id="" placeholder="Enter your Email" required>
+        </div>
+        <div>
+            <input type="color" name="" id="">
+        </div>
+        <div>
+            <input type="date" name="" id="">
+        </div>
+        <div>
+            <input type="datetime" name="" id="">
+        </div>
+        <div>
+            <input type="datetime-local" name="" id="">
+        </div>
+        <div>
+            <input type="file" name="" id="">
+        </div>
+        <div>
+            <label for="number">number</label>
+            <input type="number" min="1" max="11" name="" id="number" placeholder="Enter your number" required>
+        </div>
+        <div>
+            <input type="password" minlength="8" maxlength="16" name="" id="" placeholder="Enter Your Password" required>
+        </div>
+        <div>
+            <label for="massege">Massege</label>
+            <textarea name=""  placeholder="Enter your massege" id="massege"></textarea>
+        </div>
+        <div>
+            <input type="range" name="" id="">
+        </div>
+        <div>
+            <input type="search" placeholder="Search" name="" id="">
+        </div>
+        <div>
+            <input type="text" name="" value="Email is mandatory" id="" disabled>
+        </div>
+        <div>
+            <label for="tech">choose your skill</label>
+            <select name="tech" id="tech">
+                <option value="Select">Select</option>
+                <option value="Html">Html</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+
+      <button>A Normal Button</button>
+      <button disabled="disabled">Disabled</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

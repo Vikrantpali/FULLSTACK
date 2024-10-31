@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Form</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <div>
+        <label for="Firstname">First Name: </label>
+        <input
+          type="text"
+          name="Firstname"
+          id="Firstname"
+          placeholder="Enter First Name"
+        />
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Enter Last Name"
+        />
+      </div>
+      <div>
+        <input type="radio" name="Gender" id="Male" />
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Female" />
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Other" />
+        <label for="Other">Other</label>
+      </div>
+      <div>
+        <label for="DOB">DOB: </label>
+        <input type="date" name="DOB" id="DOB" />
+      </div>
+      <div>
+        <label for="age">Age: </label>
+        <input type="number" min="1" max="100" name="age" id="age" required />
+      </div>
+      <div>
+        <label for="phone">Phone number: </label>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          max="10"
+          placeholder="Enter Your Number"
+        />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enetr the email"
+        />
+      </div>
+      <div>
+        <label for="tech">choose your skill</label>
+        <select name="tech" id="tech">
+          <option value="Select">Select</option>
+          <option value="Html">Html</option>
+          <option value="CSS">CSS</option>
+          <option value="JS">JS</option>
+        </select>
+      </div>
+      <div>
+        <label for="massege">Massege</label>
+        <textarea
+          name=""
+          placeholder="Enter your massege"
+          id="massege"
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

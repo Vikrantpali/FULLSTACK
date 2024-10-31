@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: monospace;
+}
+.header{
+    position:fixed;    
+    background-color: black;
+    padding: 40px 80px;
+    width: 100%;
+}
+.logo{
+    color: aliceblue;
+}
+.navigation-bar{
+    position:absolute;
+    right: 300px;
+    top: 20px;
+    color: aqua;
+    display: inline;
+}
+.hero-section{
+    padding-top: 300px;
+    color: black;
+    height: 700px;
+}
+.div{
+    display: inline;
+}
+span{
+    display: block;
+}
+.navigation-bar-items{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    /* flex-direction:row-reverse; */
+    /* flex-direction:column; */
+}
+.about-section{
+    background: rgb(195, 193, 193);
+    height: 100vh;
+    padding: 0;
+}
+.container{
+    display: flex;
+    gap: 70px;
+    flex-wrap:wrap;
+    /* flex-direction:column; */
+    /* justify-content:space-between; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.sub-container-1{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* order: 3; */
+}
+.sub-container-2{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* flex-grow: 1;
+    order: 2; */
+}
+.sub-container-3{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* order: 1;
+    flex-shrink: 1; */
+}

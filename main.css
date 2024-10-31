@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    /* display: flex; */
+    padding: 40px 80px;
+    justify-content: space-between;
+}
+.navigation-bar-items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 13px;
+}

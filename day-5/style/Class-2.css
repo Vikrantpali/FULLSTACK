@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    color: aqua;
+}
+.heading{
+    font-size: 200px;
+    color: blue;
+}
+
+#text{
+    font-size: 100px;
+    color: brown;
+}
+
+.logo{
+    font-size: 25px;
+    color:coral;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: wheat;
+}
+
+#hero{
+    padding-left: 80px;
+}
+
+.navigation-bar{
+    position: fixed;
+    top: 30px;
+    left: 80%;
+}
+
+.box-model{
+    width: 600px;
+    height: 500px;
+    color: red;
+    background-color: black;
+    padding: 50px 30px 100px 10px;
+    border-width: 40px;
+    border-style: solid;
+    border-color: blue;
+    margin: 100px 30px 200px 0px;
+    /* border: 40px solid;
+    margin-top: 100;
+    margin-bottom: 50px; */
+}
