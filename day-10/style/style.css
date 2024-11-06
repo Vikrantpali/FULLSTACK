@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.paragraph{
+    width: 800px;
+    margin-top: 300px;
+    margin-left: 80px;
+    opacity: 0.6;
+}
+/* .paragraph:hover{
+    opacity: 0.7;
+} */
+.paragraph::before{
+    content: 'Note';
+    color: blue;
+}
+.paragraph::after{
+    content: 'END';
+    color: violet;
+}
+.transform{
+        width: 100px;
+        height: 100px;
+        background: black;
+        margin-left: 300px;
+        margin-top: 120px;
+        transition: transform 2s, background 0.3s;
+}
+.transform:hover{
+    transform: scale(2);
+    background: red;
+}
+img{
+    float: right;
+}
+.section-para{
+    width: 700px;
+    float: left;
+}
+.dog-info{
+    font-size: 50px;
+    position:absolute;
+    top:1250px;
+    right: 470px;
+    color: white;
+}
+/* z-index will get applied to the elements with the following properties
+position: relative/absolute/static/fixed;
+display: flex/grid; */

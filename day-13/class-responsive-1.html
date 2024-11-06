@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap Website</title>
+    <style>
+      .padding {
+        padding-top: 300px;
+      }
+      .padding-2 {
+        padding: 121px 50px;
+      }
+      .backdrop {
+        backdrop-filter: blur(20px);
+      }
+      .width-contact{
+        width: 500PX;
+      }
+      .cards {
+        box-shadow: 0px 0px 3px black;
+        transition: 0.2s;
+      }
+      .cards:hover {
+        box-shadow: 2px 2px 10px black;
+      }
+      .text-area {
+        resize: none;
+        height: 200px;
+      }
+      @media (max-width: 768px){
+        .padding-2 {
+            padding: 121px 30px;
+        }
+        .width-contact{
+            width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="container-fluid backdrop px-md-5 px-sm-3 px-0 shadow py-3 d-flex align-items-center position-fixed justify-content-between"
+    >
+      <a href="#hero"
+        ><img src="/day-11/images/home.png" width="40px" height="40px" alt=""
+      /></a>
+      <nav class="d-flex">
+        <div class="p-2 d-none d-sm-block p-sm-3">
+          <a href="#about" class="text-black text-decoration-none">About</a>
+        </div>
+        <div class="p-2 px-2 p-sm-3">
+          <a href="#services" class="text-black text-decoration-none"
+            >Services</a
+          >
+        </div>
+        <div class="p-2 px-2 p-sm-3">
+            <a href="#portfolio" class="text-black text-decoration-none">Portfolio</a></div>
+        <div class="p-2 p-sm-3">
+            <a href="contact" class="text-black text-decoration-none">Contact</a></div>
+      </nav>
+    </header>
+    <main id="hero" class="container-fluid px-5 padding">
+      <h1 class="display-1 w-50 fw-medium">Welcome to my website</h1>
+      <button
+        type="button"
+        class="btn btn-light mt-4 px-5 py-2 border border-dark rounded-pill"
+      >
+        About
+      </button>
+    </main>
+    <section id="about" class="padding-2 d-flex flex-column d-xl-flex-row gap-5 align-items-center">
+      <img src="/day-3/images/Gog.jpg" class="w-75 rounded-circle" alt="" />
+      <div>
+        <h1 class="display-5 fw-medium text-center">About Us</h1>
+        <p class="w-75 text-center m-auto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          impedit at quas esse unde velit. Quo, aut numquam perferendis quam
+          adipisci doloribus earum minima amet nulla commodi quidem, sapiente
+          delectus incidunt ipsum voluptatum possimus culpa debitis molestiae at
+          quisquam fugiat porro officia nisi voluptatibus? Molestiae doloremque
+          dolore exercitationem, ea earum saepe officia consectetur consequatur
+          animi fugiat nobis culpa placeat incidunt aliquam molestias eum
+          architecto maxime natus! Ex rem culpa eum amet assumenda voluptatum,
+          nobis possimus non aliquid at ipsa, perspiciatis repellendus accusamus
+          quia quod nisi nesciunt! Consequatur, accusamus tempore. Nostrum,
+          vero. Iusto aliquid provident illum, quidem excepturi similique quo
+          libero.
+        </p>
+      </div>
+    </section>
+    <section id="services" class="padding-2">
+      <h1 class="display-2 fw-medium">Our Services</h1>
+      <div class="d-flex flex-wrap flex-lg-nowrap gap-3 mt-5">
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            aperiam aliquam iste tempore earum corrupti error tenetur. Ullam
+            perspiciatis nostrum modi repudiandae quaerat! Reiciendis, nobis
+            accusamus fugiat dicta alias odio.
+          </p>
+        </div>
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            aperiam aliquam iste tempore earum corrupti error tenetur. Ullam
+            perspiciatis nostrum modi repudiandae quaerat! Reiciendis, nobis
+            accusamus fugiat dicta alias odio.
+          </p>
+        </div>
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            aperiam aliquam iste tempore earum corrupti error tenetur. Ullam
+            perspiciatis nostrum modi repudiandae quaerat! Reiciendis, nobis
+            accusamus fugiat dicta alias odio.
+          </p>
+        </div>
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+            aperiam aliquam iste tempore earum corrupti error tenetur. Ullam
+            perspiciatis nostrum modi repudiandae quaerat! Reiciendis, nobis
+            accusamus fugiat dicta alias odio.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="padding-2">
+      <h1 class="display-2  fw-medium">Our Services</h1>
+      <div class="d-flex flex-column flex-lg-row gap-3 mt-5">
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+        </div>
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+        </div>
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+        </div>
+        <div class="w-lg-25 cards p-3 border rounded">
+          <h1 class="h4">Full Stack Development</h1>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="padding-2">
+      <h1 class="display-2 fw-medium text-center">Contact Us</h1>
+      <form class="width-contact shadow-lg p-3 rounded mt-5 m-auto" action="">
+        <input
+          type="text"
+          class="w-100 rounded ps-3 border-dark py-2"
+          name="Name"
+          placeholder="Enter Your Name"
+          id=""
+        />
+        <input
+          type="text"
+          class="w-100 mt-4 rounded ps-3 border-dark py-2"
+          name="Email"
+          placeholder="Enter Your email"
+          id=""
+        />
+        <textarea
+          name=""
+          class="text-area mt-4 w-100 rounded ps-3 border-dark py-2"
+          id=""
+          class="w-100"
+          placeholder="Enter Your Massage"
+        ></textarea>
+        <button
+          type="button"
+          class="btn btn-light mt-4 w-100 border-dark rounded-pill"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+    <footer class="p-5 d-flex bg-secondary justify-content-between">
+      <div class="d-sm-flex">
+        <p class="text-white">xyz, District, <br>state, country</p>
+        <ul type="none" class="ps-0">
+          <li class="text-white">Instagram</li>
+          <li class="text-white">github</li>
+          <li class="text-white">linkedin</li>
+        </ul>
+      </div>
+      <div class="d-sm-flex">
+        <ul type="none">
+          <li class="text-white">PhoneNumber</li>
+          <li class="text-white">Email</li>
+        </ul>
+        <ul type="none">
+          <li>
+            <a href="#about" class="text-decoration-none text-white">About</a>
+          </li>
+          <li>
+            <a href="#services" class="text-decoration-none text-white"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="text-decoration-none text-white"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="text-decoration-none text-white"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
