@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="flex backdrop-blur z-50 justify-between fixed w-full items-center shadow-lg px-[80px] mx-lg:px[40px] max-md:px-[20px] py-[21px]"
+    >
+      <a href="./index.html"
+        ><img src="/day-11/images/home.png" width="40px" height="40px" alt=""
+      /></a>
+      <nav id="nav" class="max-md:absolute right-[-100vw] top-0">
+        <ul
+          class="flex gap-[20px] max-md:bg-white max-md:w-[100vw] max-md:h-[100vh] max-md:px-[40px] max-md:py-[80px] max-md:flex-col max-[426px]:gap-[10px]"
+        >
+          <li>
+            <a href="#about" class="max-md:text-[20px]">About</a>
+          </li>
+          <li><a href="#services" class="max-md:text-[20px]">Service</a></li>
+          <li id="blog" class="cursor-pointer">
+            <div class="flex items-center">
+              <p>Blog</p>
+              <img id="arrowdown" src="./Assets/Arrow down.svg" alt="" />
+            </div>
+          </li>
+          <li><a href="#contact" class="max-md:text-[20px]">Contact</a></li>
+        </ul>
+        <div
+          id="dropdown"
+          class="absolute hidden top-[70px] right-[20px] flex flex-col w-[200px] bg-white border-[1px] border-black rounded-[13px]"
+        >
+          <a
+            href="#blog-section"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog Section</a
+          >
+          <a
+            href="./blog-1.html"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog-1</a
+          >
+          <a
+            href="./blog-2.html"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog-2</a
+          >
+          <a href="./blog-3.html" class="px-[10px] py-[12px]">Blog-3</a>
+        </div>
+      </nav>
+      <img
+        src="/day-16/assets/hamburger.svg"
+        id="hamburger"
+        class="hidden max-md:block"
+        alt=""
+      />
+      <img
+        src="/day-16/assets/close.svg"
+        id="close"
+        class="hidden z-[999]"
+        alt=""
+      />
+    </header>
+    <main class="pt-[300px] pb-[100px] px-[80px]">
+      
+      <h1 class="text-[76px] w-[600px] leading-[100%]">
+        Some Title for the Blog-1
+      </h1>
+      <img id="cat-image" src="./Assets/cat1.jpg" class="mt-[80px] absolute" alt="" />
+      <img
+        id="cat2-image"
+        src="./Assets/cat2.jpg"
+        class="mt-[80px] opacity-0"
+        alt=""
+      />
+    </main>
+    <section id="content" class="px-[300px] py-[100px]">
+        <div class="absolute right-[80px] gap-[12px] flex flex-col">
+            <button
+                id="small-text"
+              class="border-[1px] border-black rounded-[35px] px-[12px] py-[4px]"
+            >
+              Small text
+            </button>
+            <button
+                id="medium-text"
+              class="border-[1px] border-black rounded-[35px] px-[12px] py-[4px]"
+            >
+              Medium Text
+            </button>
+            <button
+                id="large-text"
+              class="border-[1px] border-black rounded-[35px] px-[12px] py-[4px]"
+            >
+              Large Text
+            </button>
+            <button
+                id="increase-width"
+              class="border-[1px] border-black rounded-[35px] px-[12px] py-[4px]"
+            >
+              Increase Width
+            </button>
+            <button
+                id="decrease-width"
+              class="border-[1px] border-black rounded-[35px] px-[12px] py-[4px]"
+            >
+              Decrease Width
+            </button>
+          </div>
+      <h1 id="blog-header" class="mb-[30px] text-[50px]">Heading</h1>
+      <p id="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolores commodi quaerat laudantium minus fuga explicabo eius laboriosam hic enim repellat quisquam doloribus esse temporibus molestiae, officiis assumenda similique ad dolorem voluptate, eligendi laborum. Magni eius tempore molestias mollitia quam dolorem voluptatem sapiente maxime unde. Vero quo, molestiae libero debitis quod sapiente modi mollitia tempora, consequuntur id magnam voluptates dolorum repudiandae deserunt, esse eos odio? Provident reprehenderit magni corporis nostrum, vitae sit consequatur dolorum aliquam quo facere odio neque quidem reiciendis fuga a unde nemo explicabo minus qui sed quam. Ad numquam autem ducimus quam impedit animi, placeat ullam tenetur vel unde quisquam, enim magnam officia nostrum error soluta? Molestiae debitis minus illo in voluptates. Laudantium similique explicabo ducimus rerum nostrum, ad molestias a commodi illum eligendi sed vel nisi, reiciendis reprehenderit? Alias repellendus itaque asperiores eum, consectetur expedita excepturi exercitationem debitis cumque, magni quibusdam, quas explicabo saepe pariatur reiciendis nesciunt deleniti iste quae iure eius amet aspernatur. Molestias doloribus temporibus odio in cum et ducimus fugit tenetur adipisci, dolore, eveniet molestiae ipsum at alias facere recusandae enim, atque quia ullam beatae consequatur. Repudiandae recusandae, fuga quae maxime doloribus alias sed aliquid magni officiis sunt, odit rem error officia dolores illo deleniti consequatur? Rerum praesentium unde provident est maxime. Neque, eligendi laboriosam explicabo non fuga quia cupiditate doloribus earum autem tenetur, aliquam unde quasi veritatis id maxime voluptate esse quisquam at. Provident libero atque, blanditiis quisquam eum sequi est. Quae id labore voluptate eius sed aliquid fuga numquam, vero reiciendis aut doloribus quisquam ad perferendis ex et optio laborum consectetur maiores deleniti laboriosam iusto eaque itaque. Magnam fugiat optio illum, ipsum repellendus consectetur sint veniam possimus esse quisquam quibusdam. Blanditiis officia iusto enim maiores cum sint tempora commodi, nemo sapiente rem rerum quis ratione, velit labore omnis magni totam aliquid aut magnam libero sunt consequuntur voluptatem. Omnis mollitia perferendis magni consectetur repellat. Reiciendis repudiandae sint nostrum minus perspiciatis vero numquam in atque aperiam explicabo recusandae doloribus porro, voluptatibus consequatur culpa impedit ipsam? Modi, voluptatem nisi dolorem libero quae cupiditate omnis nostrum esse at ab quaerat error earum facilis porro distinctio aspernatur assumenda ipsam? Totam, ipsam. Repellat nam harum non molestiae quaerat eius vel pariatur? Alias dignissimos quis ullam quasi sapiente. Modi officiis fugiat qui, quae laborum nostrum quisquam eum neque natus asperiores autem molestias optio eaque aperiam ut commodi, accusamus blanditiis facere consequatur id? Magni, quasi aut. Necessitatibus non corrupti commodi recusandae dolorum similique libero inventore quod, assumenda voluptatem iure vitae sint quos eos dolore eveniet earum asperiores possimus tempora magni reprehenderit. Fuga enim, accusantium quod temporibus, possimus maiores doloribus, consequatur vitae corrupti assumenda alias. Vel quod nulla qui nam eligendi voluptatum quas quos, repudiandae natus molestiae temporibus minima. Deleniti laudantium ea atque commodi dolorum nisi porro repudiandae velit, saepe temporibus quos quia repellat odit veniam quis at minima est magni non voluptas repellendus, perferendis impedit nobis vel. Nam quo, magnam maxime sint perspiciatis quae officiis cumque quidem eum minus, nulla laborum non necessitatibus laboriosam architecto illum fugit, corporis adipisci?
+      </p>
+    </section>
+
+    <footer
+      class="py-[52px] flex justify-between bg-gray-500 max-[330px]:gap-[50px] max-[550px]:justify-start max-[550px]:gap-[80px] px-[80px] max-lg:px-[40px] max-mad:px-[20px]"
+    >
+      <div class="flex gap-[32px] max-[550px]:flex-col">
+        <p class="w-[100px] text-white">xyz, District, state, country</p>
+        <div>
+          <ul>
+            <li class="text-white hover:underline cursor-pointer">Instagram</li>
+            <li class="text-white hover:underline cursor-pointer">github</li>
+            <li class="text-white hover:underline cursor-pointer">linkedin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex gap-[32px] max-[550px]:flex-col">
+        <div>
+          <ul>
+            <li class="text-white hover:underline cursor-pointer">
+              PhoneNumber
+            </li>
+            <li class="text-white hover:underline cursor-pointer">Email</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#about" class="text-white hover:underline cursor-pointer"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-white hover:underline cursor-pointer"
+                >Service</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="text-white hover:underline cursor-pointer"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-white hover:underline cursor-pointer"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

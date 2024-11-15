@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dom Manipulation</title>
+  </head>
+  <body>
+    <header
+      class="flex backdrop-blur z-50 justify-between fixed w-full items-center shadow-lg px-[80px] mx-lg:px[40px] max-md:px-[20px] py-[21px]"
+    >
+      <a href="#hero"
+        ><img src="/day-11/images/home.png" width="40px" height="40px" alt=""
+      /></a>
+      <nav
+        id="nav"
+        class="max-md:hidden max-md:absolute right-[25px] top-[80px]"
+      >
+        <ul
+          class="flex gap-[20px] max-md:bg-black max-md:text-white max-md:w-[200px] max-md:px-[20px] max-md:flex-col max-[426px]:gap-[10px]"
+        >
+          <li>
+            <a href="#about" class="max-[370px]:text-sm">About</a>
+          </li>
+          <li><a href="#services" class="max-[370px]:text-sm">Service</a></li>
+          <li>
+            <a href="#portfolio" class="max-[370px]:text-sm">Portfolio</a>
+          </li>
+          <li><a href="#contact" class="max-[370px]:text-sm">Contact</a></li>
+        </ul>
+      </nav>
+      <img
+        src="./assets/hamburger.svg"
+        id="hamburger"
+        class="hidden max-md:block"
+        alt=""
+      />
+      <img src="./assets/close.svg" id="close" class="hidden" alt="" />
+    </header>
+    <p class="para"></p>
+    <p class="para"></p>
+    <main class="pt-[300px]">
+      <button ondblclick="alert('Thank you, Your response have been recorded')">
+        Click
+      </button>
+    </main>
+    <section class="px-[80px] py-[100px]">
+      <div
+        id="box"
+        onmouseenter="mouseenter()"
+        class="w-[100px] h-[100px] bg-[red]"
+      ></div>
+      <div
+        id="box2"
+        onmouseleave="mouseleave()"
+        class="w-[100px] mt-[80PX] h-[100px] bg-[red]"
+      ></div>
+    </section>
+    <p id="text" class="text-[12px]">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eos modi
+      molestias maxime, ullam ad totam omnis, asperiores accusamus, facilis quod
+      nisi nesciunt sint nam enim qui iusto esse animi. Iusto, vitae.
+      Perspiciatis deleniti tempora expedita magni dolor sed temporibus iure ad
+      animi provident accusantium non dolorem fugit minus exercitationem
+      eligendi maiores debitis ipsum eaque, ea distinctio nobis necessitatibus
+      quo! Quos perferendis nam sunt at corrupti minima doloremque quia ipsam
+      similique optio quo eius eum quam sint voluptas veniam error hic, cum,
+      repellat explicabo rem aperiam illum? Veniam, perspiciatis totam? Incidunt
+      architecto, soluta impedit reprehenderit numquam dolorem iste debitis id.
+    </p>
+    <button id="increasefontsize">Increase Size</button>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

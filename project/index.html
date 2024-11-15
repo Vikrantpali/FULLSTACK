@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project</title>
+  </head>
+  <body>
+    <header
+      class="flex backdrop-blur z-50 justify-between fixed w-full items-center shadow-lg px-[80px] mx-lg:px[40px] max-md:px-[20px] py-[21px]"
+    >
+      <a href="#hero"
+        ><img src="/day-11/images/home.png" width="40px" height="40px" alt=""
+      /></a>
+      <nav id="nav" class="max-md:absolute right-[-100vw] top-0">
+        <ul
+          class="flex gap-[20px] max-md:bg-white max-md:w-[100vw] max-md:h-[100vh] max-md:px-[40px] max-md:py-[80px] max-md:flex-col max-[426px]:gap-[10px]"
+        >
+          <li>
+            <a href="#about" class="max-md:text-[20px]">About</a>
+          </li>
+          <li><a href="#services" class="max-md:text-[20px]">Service</a></li>
+          <li id="blog" class="cursor-pointer">
+            <div class="flex items-center">
+              <p>Blog</p>
+              <img id="arrowdown" src="./Assets/Arrow down.svg" alt="" />
+            </div>
+          </li>
+          <li><a href="#contact" class="max-md:text-[20px]">Contact</a></li>
+        </ul>
+        <div
+          id="dropdown"
+          class="absolute hidden top-[70px] right-[20px] flex flex-col w-[200px] bg-white border-[1px] border-black rounded-[13px]"
+        >
+          <a
+            href="#blog-section"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog Section</a
+          >
+          <a
+            href="./blog-1.html"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog-1</a
+          >
+          <a
+            href="./blog-2.html"
+            class="px-[10px] py-[12px] border-b-[1px] border-black"
+            >Blog-2</a
+          >
+          <a href="./blog-3.html" class="px-[10px] py-[12px]">Blog-3</a>
+        </div>
+      </nav>
+      <img
+        src="/day-16/assets/hamburger.svg"
+        id="hamburger"
+        class="hidden max-md:block"
+        alt=""
+      />
+      <img
+        src="/day-16/assets/close.svg"
+        id="close"
+        class="hidden z-[999]"
+        alt=""
+      />
+    </header>
+    <main
+      id="hero"
+      class="h-[100vh] pl-[80px] max-lg:px-[40px] max-md:px[20px] pt-[300px] max-sm:pt-[150px]"
+    >
+      <h1
+        class="w-[700px] max-md:w-full text-[78px] max-md:text-[56px] max-sm:text-[44px] leading-[100%]"
+      >
+        Welcome to my website
+      </h1>
+      <a href="#about">
+        <button
+          class="px-[36px] max-sm:w-[90%] max-sm:absolute max-sm:bottom-[40px] max-sm:right-[15px] py-[8px] mt-[24px] border-[1px] border-black rounded-[35px] hover:bg-black hover:text-white max-sm:text-white max-sm:bg-black duration-500 transition-all"
+        >
+          About
+        </button>
+      </a>
+    </main>
+    <section
+      id="about"
+      class="py-[121px] px-[80px] flex gap-[65px] max-[1370px]:gap-[40px] max-[885px]:flex-col items-center max-lg:px-[40px] max-md:px-[20px]"
+    >
+      <img
+        src="/day-3/images/dog2.webp"
+        class="rounded-[50%] max-[1130px]:w-[300px]"
+        alt=""
+      />
+      <div>
+        <h1 class="text-[34px] mb-[24px] max-[885px]:text-center">About us</h1>
+        <p
+          class="w-[700px] max-[1370px]:w-[550px] max-[885px]:text-center max-[885px]:w-full"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          aliquam amet voluptas inventore nisi vel nihil cupiditate voluptates
+          quis eos sequi, corrupti quae laborum quia, et necessitatibus saepe
+          porro distinctio repudiandae veritatis cum iure rerum? Dignissimos
+          doloremque quo enim at similique nesciunt repellendus nobis nisi eius
+          molestiae amet saepe earum, maxime quia ipsum, vero corrupti, soluta
+          minima fugit provident. Asperiores tempore sit libero, possimus
+          distinctio facere labore dolorem quas hic cumque aperiam non rerum
+          facilis repellat nemo nisi ut deserunt est amet? Nulla, est obcaecati
+          porro labore necessitatibus similique quo voluptas sequi vitae at
+          tempore quia ex ab consectetur sapiente.
+        </p>
+      </div>
+    </section>
+    <section
+      id="services"
+      class="py-[121px] px-[80px] max-lg:px-[40px] max-mad:px-[20px]"
+    >
+      <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">
+        Our Services
+      </h1>
+      <div class="flex gap-[21px] max-md:gap-[30px] max-xl:flex-wrap">
+        <div
+          class="w-[25p%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+            laborum non porro aliquam quidem rerum ad aliquid temporibus quod
+            aspernatur velit numquam sapiente tempore, facilis dolore, fugiat
+            saepe voluptates vitae.
+          </p>
+        </div>
+        <div
+          class="w-[25p%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+            laborum non porro aliquam quidem rerum ad aliquid temporibus quod
+            aspernatur velit numquam sapiente tempore, facilis dolore, fugiat
+            saepe voluptates vitae.
+          </p>
+        </div>
+        <div
+          class="w-[25p%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+            laborum non porro aliquam quidem rerum ad aliquid temporibus quod
+            aspernatur velit numquam sapiente tempore, facilis dolore, fugiat
+            saepe voluptates vitae.
+          </p>
+        </div>
+        <div
+          class="w-[25p%] max-xl:w-[45%] max-md:w-full p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+        >
+          <h1 class="text-[24px] mb-[12px]">Full Stack Development</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+            laborum non porro aliquam quidem rerum ad aliquid temporibus quod
+            aspernatur velit numquam sapiente tempore, facilis dolore, fugiat
+            saepe voluptates vitae.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="blog-section"
+      class="py-[121px] px-[80px] max-lg:px-[40px] max-mad:px-[20px]"
+    >
+      <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">
+        Blog Section
+      </h1>
+      <div class="flex gap-[21px] max-md:gap-[30px] max-xl:flex-wrap">
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full" href="./blog-1.html">
+          <div
+            class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+          >
+            <h1 class="text-[24px]">Blog-1</h1>
+          </div>
+        </a>
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full" href="./blog-2.html">
+          <div
+            class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+          >
+            <h1 class="text-[24px]">Blog-2</h1>
+          </div>
+        </a>
+        <a class="w-[33%] max-xl:w-[45%] max-md:w-full" href="./blog-3.html">
+          <div
+            class="p-[20px] shadow-md rounded-[13px] hover:shadow-2xl max-md:shadow-2xl transition-all"
+          >
+            <h1 class="text-[24px]">Blog-3</h1>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section
+      id="blog-section"
+      class="py-[121px] px-[80px] max-lg:px-[40px] max-mad:px-[20px]"
+    >
+      <h1 class="text-[56px] max-md:text-[42px] max-sm:text-[36px] mb-[42px]">
+        Tabs
+      </h1>
+      <div class="flex gap-[21px] max-md:gap-[30px] max-xl:flex-wrap">
+          <div
+          onclick="showTabOne()"
+          class="px-[80px] py-[20px] rounded-[13px] border-black border-[1px] transition-all"
+          >
+            <h1 class="text-base">Tab-1</h1>
+          </div>
+          <div
+            onclick="showTabTwo()"
+            class="px-[80px] py-[20px] rounded-[13px] border-black border-[1px] transition-all"
+          >
+            <h1 class="text-base">Tab-2</h1>
+          </div>
+      </div>
+      <div id="tabone" class="hidden">
+        <h1 class="mt-[30px]">Tab-1</h1>
+        <p class="w-[500px] mt-[12px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, veritatis numquam alias, expedita corporis at eum magnam consequatur recusandae temporibus, ex dolorum beatae assumenda praesentium earum! Itaque maiores culpa magni accusantium earum voluptates nam temporibus quaerat illo qui voluptas deserunt ipsam debitis aspernatur consectetur cumque velit vitae minus inventore molestias doloribus, ab unde vero consequatur. Excepturi, accusantium recusandae magni dolor illum consectetur eaque inventore tempora voluptatibus quidem neque dolores. Sapiente sit officiis consectetur nemo aperiam, sed voluptas molestiae nobis harum quidem atque voluptate est, incidunt, dignissimos veritatis nulla.</p>
+      </div>
+      <div id="tabtwo" class="hidden">
+        <h1 class="mt-[30px]">Tab-2</h1>
+        <p class="w-[500px] mt-[12px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, veritatis numquam alias, expedita corporis at eum magnam consequatur recusandae temporibus, ex dolorum beatae assumenda praesentium earum! Itaque maiores culpa magni accusantium earum voluptates nam temporibus quaerat illo qui voluptas deserunt ipsam debitis aspernatur consectetur cumque velit vitae minus inventore molestias doloribus, ab unde vero consequatur. Excepturi, accusantium recusandae magni dolor illum consectetur eaque inventore tempora voluptatibus quidem neque dolores. Sapiente sit officiis consectetur nemo aperiam, sed voluptas molestiae nobis harum quidem atque voluptate est, incidunt, dignissimos veritatis nulla.</p>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="py-[121px] flex flex-col items-center px-[80px] max-lg:px-[40px] max-mad:px-[20px]"
+    >
+      <h1
+        class="text-[56px] max-md:text-[42px] max-sm:text-[36px] text-center mb-[42px]"
+      >
+        Contact Us
+      </h1>
+      <form
+        class="flex flex-col gap-[20px] w-[500px] px-[20px] py-[30px] max-sm:w-full shadow-2xl rounded-[13px]"
+        action=""
+      >
+        <input
+          type="text"
+          class="border-[1px] border-black pl-[12px] py-[7px] rounded-[7px]"
+          name="Name"
+          placeholder="Enter Your Name"
+          id="nameField"
+        />
+        <input
+          type="text"
+          class="border-[1px] border-black pl-[12px] py-[7px] rounded-[7px]"
+          name="Email"
+          placeholder="Enter Your email"
+          id="emailField"
+        />
+        <!-- placeholder:text-[red] -->
+        <textarea
+          name=""
+          class="resize-none border-[1px] border-black pl-[12px] py-[7px] rounded-[7px]"
+          id="messageField"
+          placeholder="Enter Your Massage"
+        ></textarea>
+        <button
+          id="submitbutton"
+          class="border-black border-[1px] py-[12px] rounded-[35px] hover:bg-black hover:text-white max-md:text-white max-md:bg-black duration-500 transition-all"
+        >
+          Submit
+        </button>
+      </form>
+      <div
+        id="background"
+        class="w-full h-full hidden fixed opacity-50 top-0 left-0 bg-black"
+      ></div>
+      <div
+      id="popup"
+        class="w-[500px] hidden h-[300px] fixed top-[33%] bg-white rounded-[13px] flex flex-col justify-center items-center"
+      >
+        <h1 class="text-[40px] text-center">Your Form Have been Submitted</h1>
+        <img
+          src="/day-16/assets/close.svg"
+          id="close-popup"
+          class="absolute top-[40px] cursor-pointer right-[40px] z-[999]"
+          alt=""
+        />
+      </div>
+    </section>
+    <footer
+      class="py-[52px] flex justify-between bg-gray-500 max-[330px]:gap-[50px] max-[550px]:justify-start max-[550px]:gap-[80px] px-[80px] max-lg:px-[40px] max-mad:px-[20px]"
+    >
+      <div class="flex gap-[32px] max-[550px]:flex-col">
+        <p class="w-[100px] text-white">xyz, District, state, country</p>
+        <div>
+          <ul>
+            <li class="text-white hover:underline cursor-pointer">Instagram</li>
+            <li class="text-white hover:underline cursor-pointer">github</li>
+            <li class="text-white hover:underline cursor-pointer">linkedin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex gap-[32px] max-[550px]:flex-col">
+        <div>
+          <ul>
+            <li class="text-white hover:underline cursor-pointer">
+              PhoneNumber
+            </li>
+            <li class="text-white hover:underline cursor-pointer">Email</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#about" class="text-white hover:underline cursor-pointer"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-white hover:underline cursor-pointer"
+                >Service</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="text-white hover:underline cursor-pointer"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-white hover:underline cursor-pointer"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
