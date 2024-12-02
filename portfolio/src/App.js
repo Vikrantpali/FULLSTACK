@@ -6,11 +6,15 @@ import Homepage from "./pages/homepage";
 import AboutPage from "./pages/aboutpage";
 import ContactPage from "./pages/contactpage";
 import Projectpage from "./pages/projectpage";
+import Altitude from "./pages/Altitude"
 import TailwindProject from "./pages/tailwindproject";
+import Portfolio from "./pages/Portfolio";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "./context/themeContext";
 
 function App() {
   return (
+    <ThemeProvider>
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -59,10 +63,29 @@ function App() {
             </>
           }
         />
+        <Route
+          exact
+          path={"/project/altitude-project"}
+          element={
+            <>
+              <Altitude/>
+            </>
+          }
+        />
+        <Route
+          exact
+          path={"/project/portfolio-project"}
+          element={
+            <>
+              <Portfolio/>
+            </>
+          }
+        />
       </Routes>
       <Sidebar />
       <Footer />
     </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
